@@ -11,10 +11,8 @@
 
 Proyecto web de fin de curso (Desarollo de aplicaciones web III)
 
-- FUNCIONALIDADES CRUD.
-- FULL RESPONSIVE.
-- MOBILE FIRST.
-- FAST.
+- Funcionalidades CRUD.
+- Full responsive and faster.
 
 ## Sobre el proyecto
 
