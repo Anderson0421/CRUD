@@ -12,7 +12,7 @@
 Proyecto web de fin de curso (Desarollo de aplicaciones web III)
 Hecho con Laravel , TailwindCSS y MySQL
 
-- fUNCIONALIDADES CRUD.
+- FUNCIONALIDADES CRUD.
 - FULL RESPONSIVE.
 - MOBILE FIRST.
 - FAST.
