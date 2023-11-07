@@ -14,7 +14,7 @@ Proyecto web de fin de curso (Desarollo de aplicaciones web III)
 - Funcionalidades CRUD.
 - Full responsive and faster.
 
-## Sobre el proyecto
+## Tecnologias
 
 - Laravel 10
 - Tailwindcss
