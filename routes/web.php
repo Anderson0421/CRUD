@@ -14,3 +14,5 @@ Route::controller(LoginController::class)->group(function (){
 });
 
 // Hola a todos
+
+//Hola SENATINO
