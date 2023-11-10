@@ -19,3 +19,4 @@ Route::controller(LoginController::class)->group(function (){
 
 
 // Buenas noshess
+// 2do intento
