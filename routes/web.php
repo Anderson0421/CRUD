@@ -16,4 +16,4 @@ Route::controller(LoginController::class)->group(function (){
 
 
 
-//HOLA MUNDO!!!!!!!!!!!!!!!
+//HOLA MUNDO!!!!!!!!!!!!!!!!
