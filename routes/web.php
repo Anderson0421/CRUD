@@ -13,4 +13,7 @@ Route::controller(LoginController::class)->group(function (){
     Route::get('/login', 'login');  // Ruta Login - Muestra de formulario
 });
 
+
+
+
 //HOLA MUNDO!!!!!!!!!!!!!!!
