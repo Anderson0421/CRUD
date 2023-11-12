@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\plataforma;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -13,16 +14,10 @@ Route::controller(LoginController::class)->group(function (){
     Route::get('/login', 'login');  // Ruta Login - Muestra de formulario
 });
 
-// Hola a todos
 
-// Hola SENATINO
-
-
-// Buenas noshess
-
-// 2do intento
-
-// 2do intento
-
-//ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+Route::controller(plataforma::class)->group(function(){
+    Route::get('/','List');
+    Route::get('/{id}/Edit','Edit');
+    Route::put('/{id}/Edit','Update')->name('update');
+});
 
