@@ -19,5 +19,12 @@ Route::controller(plataforma::class)->group(function(){
     Route::get('/','List');
     Route::get('/{id}/Edit','Edit');
     Route::put('/{id}/Edit','Update')->name('update');
+    Route::delete('lugares/{id}', 'destroy')->middleware('web');
+
+    Route::get('/Create','Create')->name('create');
+    Route::post('/process','process')->name('process');
+
+
+
 });
 
