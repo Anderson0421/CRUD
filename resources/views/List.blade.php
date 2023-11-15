@@ -30,11 +30,13 @@
                 <td>{{$lugar->nombre}}</td>
                 <td>{{$lugar->categoria}}</td>
                 <td>@if ($lugar->categoria == 'Basico')
+
                     {{$lugar->oferta = 50}}
                 @elseif($lugar->categoria == 'Intermedio')
                     {{$lugar->oferta = 150}}
                 @elseif($lugar->categoria == 'Avanzado')
                     {{$lugar->oferta = 200}}
+
                 @endif</td>
                 <td>
                     <img src="{{ asset('storage/lugares/' . $lugar->imagen) }}" alt="{{ $lugar->nombre }}" class="mt-2 w-28">
