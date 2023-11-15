@@ -22,22 +22,24 @@
 
             <div class="mb-4">
                 <label for="categoria" class="block text-sm font-medium text-gray-600">Categoría</label>
-                <input type="text" name="categoria" id="categoria" value="{{ $lugar->categoria }}" class="mt-1 p-2 border rounded-md w-full">
+                <select name="categoria" id="countries_disabled" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected value="{{$lugar->categoria}}">{{$lugar->categoria}}</option>
+                        <option value="Basico">Basico</option>
+                        <option value="Intermedio">Intermedio</option>
+                        <option value="Avanzado">Avanzado</option>
+                </select>
             </div>
 
-            <div class="mb-4">
-                <label for="oferta" class="block text-sm font-medium text-gray-600">Oferta</label>
-                <input type="text" name="oferta" id="oferta" value="{{ $lugar->oferta }}" class="mt-1 p-2 border rounded-md w-full">
-            </div>
+
 
             <div class="mb-4">
                 <label for="imagen_actual" class="block text-sm font-medium text-gray-600">Imagen Actual</label>
-                <img class="mt-2 w-28" width="150px" src="{{ asset('storage/' . $lugar->imagen) }}" alt="Imagen actual">
+                    <img src="{{ asset('storage/lugares/' . $lugar->imagen) }}" alt="{{ $lugar->nombre }}" class="mt-2 w-28">
             </div>
             
             <div class="mb-4">
-                <label for="nueva_imagen" class="block text-sm font-medium text-gray-600">Nueva Imagen (opcional)</label>
-                <input type="file" name="nueva_imagen" id="nueva_imagen" class="mt-1 p-2 border rounded-md w-full">
+                <label for="imagen" class="block text-sm font-medium text-gray-600">Nueva Imagen (opcional)</label>
+                <input type="file" name="imagen" id="imagen" class="mt-1 p-2 border rounded-md w-full">
             </div>
             
 
