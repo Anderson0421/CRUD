@@ -29,14 +29,13 @@
                 <td>{{$lugar->id}}</td>
                 <td>{{$lugar->nombre}}</td>
                 <td>{{$lugar->categoria}}</td>
-                @if ($lugar->categoria == 'Basico')
+                <td>@if ($lugar->categoria == 'Basico')
                     {{$lugar->oferta = 50}}
                 @elseif($lugar->categoria == 'Intermedio')
                     {{$lugar->oferta = 150}}
                 @elseif($lugar->categoria == 'Avanzado')
                     {{$lugar->oferta = 200}}
-                @endif
-                <td>{{$lugar->oferta}}</td>
+                @endif</td>
                 <td>
                     <img src="{{ asset('storage/lugares/' . $lugar->imagen) }}" alt="{{ $lugar->nombre }}" class="mt-2 w-28">
                 </td>
