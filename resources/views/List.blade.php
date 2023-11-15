@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,12 @@
 
     @vite('resources/css/app.css')
 </head>
-<body>
+<body class="dark:bg-gray-900">
     @include('partials.nav')
-    <div class="container mx-auto pt-5">
+    <div class="container mx-auto pt-5 dark:text-white">
         <h1 class="text-4xl font-semibold mb-10">Listado de lugares</h1>
-    <table id="MyTable">
-        <thead>
+    <table id="MyTable" class="dark:text-white">
+        <thead class="dark:text-white">
             <tr>
                 <th>ID</th>
                 <th>Nombre</th>
@@ -23,7 +23,7 @@
                 <th>Acciones</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="dark:text-white">
             @foreach ($lugares as $lugar)
             <tr>
                 <td>{{$lugar->id}}</td>
@@ -35,7 +35,6 @@
                     {{$lugar->oferta = 150}}
                 @elseif($lugar->categoria == 'Avanzado')
                     {{$lugar->oferta = 200}}
-
                 @endif</td>
                 <td>
                     <img src="{{ asset('storage/lugares/' . $lugar->imagen) }}" alt="{{ $lugar->nombre }}" class="mt-2 w-28">
@@ -155,6 +154,9 @@
                 console.error('Error:', error);
             });
         }
+    </script>
+    <script src="script.js">
+
     </script>
     
     
