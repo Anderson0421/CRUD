@@ -30,7 +30,6 @@
                 <td>{{$lugar->nombre}}</td>
                 <td>{{$lugar->categoria}}</td>
                 <td>@if ($lugar->categoria == 'Basico')
-
                     {{$lugar->oferta = 50}}
                 @elseif($lugar->categoria == 'Intermedio')
                     {{$lugar->oferta = 150}}
