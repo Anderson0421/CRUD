@@ -72,14 +72,8 @@ class plataforma extends Controller
 
     public function Process(Request $request)
     {
-        try {
-            // Validación de datos
-            $request->validate([
-                'nombre' => 'required|string',
-                'categoria' => 'required|string',
-                'imagen' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            ]);
     
+
             $lugar = new Lugare();
     
 
@@ -96,9 +90,7 @@ class plataforma extends Controller
             $lugar->save();
     
             return redirect('/')->with('success', 'Registro creado exitosamente.');
-        } catch (\Exception $e) {
-            return redirect('/')->with('error', 'Error al crear el registro: ' . $e->getMessage());
-        }
+
     }
 
 

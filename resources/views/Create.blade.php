@@ -28,11 +28,6 @@
             </div>
 
             <div class="mb-4">
-                <label for="oferta" class="block text-sm font-medium text-gray-600">Oferta</label>
-                <input type="text" name="oferta" id="oferta"  class="mt-1 p-2 border rounded-md w-full">
-            </div>
-
-            <div class="mb-4">
                 <label for="imagen" class="block text-sm font-medium text-gray-600">Nueva Imagen (opcional)</label>
                 <input type="file" name="imagen" id="imagen" class="mt-1 p-2 border rounded-md w-full">
             </div>
